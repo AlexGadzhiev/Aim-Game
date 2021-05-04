@@ -9,6 +9,11 @@ const rectangle = {
     width: 50,
     height: 50,
 };
+setTimeout( function(){window.location.href = "main.html"},600000);
+function decreaseTime() {
+    document.getElementById('time').innerHTML--;
+}
+setInterval(decreaseTime, 1000);
 function f() {
     let x = Math.random() * 1850;
     let y = Math.random() * 850;
@@ -28,7 +33,7 @@ function f() {
         console.log("clickPositionY " + clickPositionY);
         console.log("x " + x);
         console.log("y " + y);
-        if(clickPositionX >= x && clickPositionX <= x + 50 && clickPositionY >= y + 63 && clickPositionY <= y + 112){
+        if(clickPositionX >= x && clickPositionX <= x + 50 && clickPositionY >= y + 196 && clickPositionY <= y + 247){
             document.getElementById('counter').innerHTML++;
             clear();
             x = -100;
@@ -36,8 +41,8 @@ function f() {
         }
     });
     if(x != -100 && y != -100) {
-        setTimeout(clear, 5000);
+        setTimeout(clear, 10000);
     }
 }
-setInterval(f, 5000);
+setInterval(f, 10000);
 console.log(count);

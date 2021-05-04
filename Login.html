@@ -8,16 +8,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+        #para1{
+            margin-left: 10px;
+        }
         #a {
-            font-size: 150%;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div>
+            <h1 id="para1">
+                Логин:
+            </h1>
+            <input type="text" id="login">
+        </div>
+    </header>
     <div>
-        <p>Логин: <input type="text" id="login"></p>
-        <form action="Game.html" id="first">
+        <form action="main.html">
             <button class="btn btn-primary" id="a">ОК</button>
         </form>
     </div>
