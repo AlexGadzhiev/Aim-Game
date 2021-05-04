@@ -9,14 +9,14 @@ const rectangle = {
     width: 50,
     height: 50,
 };
-setTimeout( function(){window.location.href = "main.html"},600000);
+setTimeout( function(){window.location.href = "main.html"},60000);
 function decreaseTime() {
     document.getElementById('time').innerHTML--;
 }
 setInterval(decreaseTime, 1000);
 function f() {
     let x = Math.random() * 1850;
-    let y = Math.random() * 850;
+    let y = Math.random() * 700;
     function create() {
         ctx.fillStyle = 'black';
         ctx.fillRect(x, y, rectangle.width, rectangle.height);
@@ -41,8 +41,8 @@ function f() {
         }
     });
     if(x != -100 && y != -100) {
-        setTimeout(clear, 10000);
+        setTimeout(clear, 3000);
     }
 }
-setInterval(f, 10000);
+setInterval(f, 3000);
 console.log(count);
